@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+[![Build Status](https://travis-ci.org/eduvallve/green_world_ev.svg?branch=master)](https://travis-ci.org/eduvallve/green_world_ev)
 
 _s
 ===
