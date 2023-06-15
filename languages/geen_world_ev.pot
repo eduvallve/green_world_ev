@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Automattic
+# Copyright (C) 2023 Eduvallve
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
@@ -27,7 +27,7 @@ msgid "Hi. I'm a happy theme designed for non-profit eco-friendly initiatives."
 msgstr ""
 
 #. Author of the theme
-msgid "Automattic"
+msgid "eduvallve"
 msgstr ""
 
 #. Author URI of the theme
