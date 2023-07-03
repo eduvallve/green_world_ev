@@ -1,7 +1,6 @@
-@import './default_style';
-
+// @import './default_style';
+@import './mixins';
+@import './breakpoints';
 @import './colors';
-
-@import './typography';
-
+// @import './typography';
 @import './components/components_list';

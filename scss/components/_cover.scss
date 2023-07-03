@@ -1,0 +1,31 @@
+$module: 'cover';
+
+.wp-block-#{$module} {
+    .wp-block-#{$module}__inner-container,
+    .wp-block-#{$module}-image .wp-block-#{$module}__inner-container {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .wp-block-columns:not(.is-style-full-width) & {
+        border-radius: 12px;
+        overflow: hidden;
+        padding: 0 30px;
+    }
+
+    .is-style-full-width & {
+        width: 100vw;
+        margin-left: -15px;
+        max-width: 100vw;
+
+        @include breakpoint($bp-tablet-min) {
+            margin-left: 0;
+        }
+
+        @include breakpoint($bp-large-desktop-min) {
+            margin-left: calc((50vw - 600px) * -1);
+            max-width: 100vw;
+        }
+    }
+}

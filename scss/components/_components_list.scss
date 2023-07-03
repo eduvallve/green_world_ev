@@ -1,3 +1,19 @@
+/* --- Header styles --- */
 @import './header';
+@import './navigation';
 
+/* --- Global content styles --- */
+// @import './content';
+// @import './layout';
+
+/* === === === === Specific blocks styles - START === === === === */
+// @import './buttons';
+@import './columns';
+@import './cover';
+@import './gallery';
+@import './latest-posts';
+@import './table';
+/* === === === === Specific blocks styles - END === === === === */
+
+/* --- Footer styles --- */
 @import './footer';

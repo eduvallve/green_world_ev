@@ -1,0 +1,10 @@
+@mixin grid_cols_width($cols, $gap) {
+    $grid-col-width: calc(100% / #{$cols} - #{$gap} * #{$cols - 1} / #{$cols});
+    $grid-tmp-cols: #{''};
+
+    @for $i from 1 through $cols {
+        $grid-tmp-cols : $grid-tmp-cols $grid-col-width #{''};
+    }
+    grid-template-columns: $grid-tmp-cols;
+    grid-gap: $gap;
+  }

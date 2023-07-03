@@ -1,0 +1,36 @@
+$module: 'button';
+
+.wp-block- {
+    &#{$module} {
+        &__link {
+            border-radius: 4px;
+            transition: all .25s;
+
+            .is-style-fill & {
+                background-color: $c-theme-off-white;
+                color: $c-theme-black;
+
+                &:hover {
+                    background-color: $c-green-primary;
+                    color: $c-theme-off-white;
+                }
+            }
+
+            .is-style-outline &:not(.has-background) {
+                color: $c-theme-off-white;
+                border-color: $c-theme-off-white;
+
+                &:hover {
+                    color: $c-green-secondary;
+                    border-color: $c-green-secondary;
+                }
+            }
+        }
+    }
+
+    &#{$module}s {
+        &.is-layout-flex {
+            column-gap: 30px;
+        }
+    }
+}

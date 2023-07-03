@@ -1,0 +1,9 @@
+$module: 'table';
+
+.wp-block-#{$module} {
+    &.is-style-no-borders {
+        table td {
+            border: none;
+        }
+    }
+}

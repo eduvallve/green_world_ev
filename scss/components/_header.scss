@@ -1,0 +1,15 @@
+$module: 'header';
+
+#{$module}.wp-block-template-part {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint($bp-large-desktop-min) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

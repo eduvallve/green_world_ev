@@ -1,5 +1,40 @@
 $module: 'footer';
 
-#{$module}.site-#{$module} {
-    background-color: $c-theme-beige;
+#{$module}.wp-block-template-part {
+    padding: 75px 15px 30px;
+    background: var(--wp--preset--color--c-theme-black);
+    color: white;
+
+    @include breakpoint($bp-large-desktop-min) {
+        padding: 75px 0px 30px;
+    }
+
+    .wp-block-columns {
+        gap: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .wp-block-column > * {
+        margin: 0 0 20px 0;
+    }
+
+    .signature-line {
+        padding-top: 55px;
+        font-size: var(--wp--preset--font-size--small);
+        color: var(--wp--preset--color--c-theme-medium-grey);
+
+        .alignwide {
+            justify-content: space-between;
+        }
+
+        a {
+            color: var(--wp--preset--color--c-green-secondary);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--wp--preset--color--c-green-primary);
+            }
+        }
+    }
 }

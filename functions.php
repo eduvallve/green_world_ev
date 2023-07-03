@@ -176,3 +176,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Add custom styles for the WP blocks
+ */
+add_action( 'init', 'themeslug_register_block_styles' );
+
+function themeslug_register_block_styles() {
+    register_block_style(
+        'core/columns',
+        array(
+            'name'  => 'full-width',
+            'label' => __( 'Full width', 'textdomain' )
+        )
+    );
+	register_block_style(
+        'core/table',
+        array(
+            'name'  => 'no-borders',
+            'label' => __( 'No borders', 'textdomain' )
+        )
+    );
+}

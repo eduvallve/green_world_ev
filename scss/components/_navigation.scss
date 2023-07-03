@@ -1,0 +1,28 @@
+$module: 'navigation';
+
+header .wp-block-#{$module} {
+    &__container {
+        gap: 3vw;
+
+        @include breakpoint($bp-large-desktop-min) {
+            gap: 40px;
+        }
+    }
+
+    &-item__content {
+        line-height: 4em;
+    }
+}
+
+footer .wp-block-#{$module} {
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+
+    &__container {
+        gap: 1vw;
+    }
+
+    &-item__content {
+        line-height: 1.75em;
+    }
+}

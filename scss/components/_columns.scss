@@ -1,0 +1,69 @@
+$module: 'column';
+
+.wp-block-#{$module}s {
+    margin-bottom: 0;
+
+    .entry-content > &:not(.is-style-full-width),
+    .entry-content > &.is-style-full-width {
+        & > .wp-block-column {
+            margin: 0 15px;
+
+            @include breakpoint($bp-tablet-min) {
+                margin-left: auto !important;
+                margin-right: auto !important;
+                max-width: var(--wp--style--global--content-size);
+            }
+        }
+
+        &.has-background {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $bp-mobile-max) {
+        &.has-background {
+            padding: 0;
+        }
+    }
+
+    @include breakpoint($bp-large-desktop-min) {
+        div.entry-content > &:not(.has-background):not(.is-style-full-width) > div.wp-block-column {
+            padding: 0;
+        }
+    }
+
+    &.has-background {
+        margin-bottom: 0;
+        padding: 1.25em 0;
+
+        .wp-block-#{$module}s {
+            @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-desktop-max) {
+                padding: 1.25em 15px;
+            }
+
+            @include breakpoint($bp-large-desktop-min) {
+                padding: 1.25em 0;
+            }
+        }
+    }
+
+    @include breakpoint($bp-tablet-min) {
+        .entry-content > &:not(.is-style-full-width) > div.wp-block-#{$module} {
+            &:first-of-type {
+                padding-left: 15px;
+
+                @include breakpoint($bp-large-desktop-min) {
+                    margin-left: -15px;
+                }
+            }
+
+            &:last-of-type {
+                padding-right: 15px;
+
+                @include breakpoint($bp-large-desktop-min) {
+                    margin-right: -15px;
+                }
+            }
+        }
+    }
+}

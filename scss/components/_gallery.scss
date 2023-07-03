@@ -1,0 +1,11 @@
+$module: 'gallery';
+
+figure.wp-block-#{$module}.has-nested-images {
+    figure.wp-block-image {
+        min-height: 34px;
+
+        img {
+            width: fit-content;
+        }
+    }
+}

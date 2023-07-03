@@ -1,0 +1,11 @@
+// $module: 'layout';
+
+// .is-#{$module}-constrained {
+//     > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+//         padding: 0 15px;
+
+//         @include breakpoint($bp-tablet-min) {
+//             padding: 0;
+//         }
+//     }
+// }
